@@ -29,4 +29,4 @@ services:
       - "10000:10000"
 ```
 
-For more information on the service take a look [here](https://github.com/vordenken/deye-microinverter-cloud-free/blob/main/dummycloud/README.md)
+For more information on the service take a look [here](https://github.com/vordenken/deye-microinverter-cloud-free/blob/main/dummycloud/Readme.md)
