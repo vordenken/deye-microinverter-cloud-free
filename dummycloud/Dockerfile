@@ -5,7 +5,7 @@ COPY package*.json ./
 RUN npm ci --omit=dev
 COPY . .
 
-FROM gcr.io/distroless/nodejs18-debian12
+FROM gcr.io/distroless/nodejs18-debian12:nonroot
 WORKDIR /app
 COPY --from=build-env /app /app
 
