@@ -6,7 +6,7 @@ This is a fork of the [original Deye Microinverter Cloud-Free project](https://g
 
 - Automated Docker image builds and pushes to GitHub Container Registry
 - Weekly automatic builds every Monday at 00:00 UTC
-- Based on Node.js 18 Alpine for minimal image size
+- Based on Node.js distroless (nonroot) image for minimal image size and improved security
 
 ## Quick Start
 
