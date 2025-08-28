@@ -1,11 +1,11 @@
-FROM node:18-alpine AS build-env
+FROM node:22-alpine AS build-env
 
 WORKDIR /app
 COPY package*.json ./
 RUN npm ci --omit=dev
 COPY . .
 
-FROM gcr.io/distroless/nodejs18-debian12:nonroot
+FROM gcr.io/distroless/nodejs22-debian12:nonroot
 WORKDIR /app
 COPY --from=build-env /app /app
 
